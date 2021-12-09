@@ -8,5 +8,12 @@ pipeline {
       }
     }
 
+    stage('Execute Jar') {
+      steps {
+        unstash 'Target'
+        sh 'java -jar target/*jar'
+      }
+    }
+
   }
 }
