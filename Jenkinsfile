@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''./mvnw package
 pwd'''
-        stash 'Target'
+        stash 'target'
       }
     }
 
