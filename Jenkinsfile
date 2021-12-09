@@ -11,7 +11,7 @@ pwd'''
 
     stage('Execute Jar') {
       steps {
-        unstash 'Target'
+        unstash 'target'
         sh 'java -jar target/*jar'
       }
     }
